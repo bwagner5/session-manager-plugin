@@ -1,5 +1,5 @@
 COPY := cp -p
-GO_BUILD := go build -i
+GO_BUILD := go build
 
 # Default build configuration, can be overridden at build time.
 GOARCH?=$(shell go env GOARCH)
@@ -124,6 +124,14 @@ build-darwin-amd64: checkstyle copy-src pre-build
 	GOOS=darwin GOARCH=amd64 $(GO_BUILD) -ldflags "-s -w" -o $(GO_SPACE)/bin/darwin_amd64/ssmcli -v \
     		$(GO_SPACE)/cmd/ssmcli/main.go
 
+.PHONY: build-darwin-arm64
+build-darwin-arm64: checkstyle copy-src pre-build
+	@echo "Build for darwin arm64 platform"
+	GOOS=darwin GOARCH=arm64 $(GO_BUILD) -ldflags "-s -w" -o $(GO_SPACE)/bin/darwin_arm64_plugin/session-manager-plugin -v \
+		$(GO_SPACE)/cmd/session-manager-plugin/main.go
+	GOOS=darwin GOARCH=arm64 $(GO_BUILD) -ldflags "-s -w" -o $(GO_SPACE)/bin/darwin_arm64/ssmcli -v \
+    		$(GO_SPACE)/cmd/ssmcli/main.go
+
 .PHONY: build-windows-amd64
 build-windows-amd64: checkstyle copy-src pre-build
 	@echo "Build for windows platform"
@@ -245,6 +253,13 @@ package-darwin-arm64:
 .PHONY: package-darwin-amd64
 package-darwin-amd64:
 	$(GO_SPACE)/Tools/src/create_darwin_amd64_bundle_plugin.sh
+<<<<<<< HEAD
+=======
+
+.PHONY: package-darwin-arm64
+package-darwin-arm64:
+	$(GO_SPACE)/Tools/src/create_darwin_arm64_bundle_plugin.sh
+>>>>>>> ba3ef586 (darwin arm64 support)
 
 .PHONY: package-win-386
 package-win-386: create-package-folder
