@@ -253,13 +253,6 @@ package-darwin-arm64:
 .PHONY: package-darwin-amd64
 package-darwin-amd64:
 	$(GO_SPACE)/Tools/src/create_darwin_amd64_bundle_plugin.sh
-<<<<<<< HEAD
-=======
-
-.PHONY: package-darwin-arm64
-package-darwin-arm64:
-	$(GO_SPACE)/Tools/src/create_darwin_arm64_bundle_plugin.sh
->>>>>>> ba3ef586 (darwin arm64 support)
 
 .PHONY: package-win-386
 package-win-386: create-package-folder
