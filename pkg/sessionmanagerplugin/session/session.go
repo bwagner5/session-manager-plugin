@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aws/session-manager-plugin/src/config"
+	"github.com/aws/session-manager-plugin/pkg/config"
 
 	"github.com/aws/aws-sdk-go/service/ssm"
 	"github.com/aws/session-manager-plugin/pkg/datachannel"

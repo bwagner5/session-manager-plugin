@@ -15,13 +15,8 @@
 package version
 
 import (
-<<<<<<< HEAD:src/version/versionvalidator.go
-	"github.com/aws/session-manager-plugin/src/config"
-	"github.com/aws/session-manager-plugin/src/log"
-=======
 	"github.com/aws/session-manager-plugin/pkg/config"
 	"github.com/aws/session-manager-plugin/pkg/log"
->>>>>>> 2fa9d971 (use go modules and fix paths):pkg/version/versionvalidator.go
 )
 
 // DoesAgentSupportTCPMultiplexing returns true if given agentVersion supports TCP multiplexing in port plugin, false otherwise

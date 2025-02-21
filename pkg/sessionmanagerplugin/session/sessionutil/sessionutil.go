@@ -14,11 +14,7 @@
 // Package sessionutil provides utility for sessions.
 package sessionutil
 
-<<<<<<< HEAD:src/sessionmanagerplugin/session/sessionutil/sessionutil.go
-import "github.com/aws/session-manager-plugin/src/log"
-=======
 import "github.com/aws/session-manager-plugin/pkg/log"
->>>>>>> 2fa9d971 (use go modules and fix paths):pkg/sessionmanagerplugin/session/sessionutil/sessionutil.go
 
 func NewDisplayMode(log log.T) DisplayMode {
 	displayMode := DisplayMode{}

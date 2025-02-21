@@ -17,13 +17,8 @@ package version
 import (
 	"testing"
 
-<<<<<<< HEAD:src/version/versionvalidator_test.go
-	"github.com/aws/session-manager-plugin/src/config"
-	"github.com/aws/session-manager-plugin/src/log"
-=======
 	"github.com/aws/session-manager-plugin/pkg/config"
 	"github.com/aws/session-manager-plugin/pkg/log"
->>>>>>> 2fa9d971 (use go modules and fix paths):pkg/version/versionvalidator_test.go
 	"github.com/stretchr/testify/assert"
 )
 

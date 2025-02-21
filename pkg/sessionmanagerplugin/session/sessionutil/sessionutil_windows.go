@@ -23,13 +23,8 @@ import (
 	"os"
 	"syscall"
 
-<<<<<<< HEAD:src/sessionmanagerplugin/session/sessionutil/sessionutil_windows.go
-	"github.com/aws/session-manager-plugin/src/log"
-	"github.com/aws/session-manager-plugin/src/message"
-=======
 	"github.com/aws/session-manager-plugin/pkg/log"
 	"github.com/aws/session-manager-plugin/pkg/message"
->>>>>>> 2fa9d971 (use go modules and fix paths):pkg/sessionmanagerplugin/session/sessionutil/sessionutil_windows.go
 	"golang.org/x/sys/windows"
 )
 

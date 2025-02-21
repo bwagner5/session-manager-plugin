@@ -34,6 +34,7 @@ import (
 	"github.com/aws/session-manager-plugin/pkg/message"
 	"github.com/aws/session-manager-plugin/pkg/sessionmanagerplugin/session"
 	"github.com/aws/session-manager-plugin/pkg/sessionmanagerplugin/session/sessionutil"
+	"github.com/aws/session-manager-plugin/pkg/version"
 	"github.com/xtaci/smux"
 	"golang.org/x/sync/errgroup"
 )
